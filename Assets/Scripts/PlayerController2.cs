@@ -16,6 +16,11 @@ public class PlayerController2 : MonoBehaviour
         
         //cc.Move(transform.forward * Input.GetAxis("Vertical") * Time.deltaTime * 5.0f);
         
+        //simpleMoveにすると移動量が減るので掛け算の値を増やす
         cc.SimpleMove(transform.forward * Input.GetAxis("Vertical") * Time.deltaTime * 120.0f);
     }
+    //棒をすり抜けるのはTranslateで移動してるから　
+    //rigidbodyつけたらFloor外にでたら落ちる
+    //Moveだと重力ない
+    //SimpleMoveだと重力あるので落ちる　ジャンプできない
 }

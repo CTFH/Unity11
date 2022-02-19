@@ -45,6 +45,6 @@ public class EnemyController : MonoBehaviour
             }
         }
     }
-
+    //Stageの外は追跡範囲に含まれていないので追いかけてこない
     
 }
