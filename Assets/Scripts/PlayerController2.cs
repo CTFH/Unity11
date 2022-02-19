@@ -23,4 +23,6 @@ public class PlayerController2 : MonoBehaviour
     //rigidbodyつけたらFloor外にでたら落ちる
     //Moveだと重力ない
     //SimpleMoveだと重力あるので落ちる　ジャンプできない
+    //CharacterControllerつけたらTranslateで動かさない
+    //CharacterControllerつけたらMoveかSimpleMoveで動かす
 }
